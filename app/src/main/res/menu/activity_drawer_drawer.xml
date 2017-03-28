@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/navHalamanUtama"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Halaman Utama" />
+        <item
+            android:id="@+id/navDaftar"
+            android:icon="@drawable/ic_view_list_black_24dp"
+            android:title="Daftar Item" />
+        <item
+            android:id="@+id/navKadaluarsa"
+            android:icon="@drawable/ic_expired_24dp"
+            android:title="Kadaluarsa" />
+        <item
+            android:id="@+id/navFavorit"
+            android:icon="@drawable/ic_star_black_24dp"
+            android:title="Favorit" />
+        <item
+            android:id="@+id/navArsip"
+            android:icon="@drawable/ic_archive_black_24dp"
+            android:title="Arsip" />
+        <item
+            android:id="@+id/navInfo"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:title="Informasi Item" />
+
+
+    </group>
+</menu>
