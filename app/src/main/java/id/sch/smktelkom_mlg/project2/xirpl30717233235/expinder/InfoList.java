@@ -16,8 +16,6 @@ import android.view.MenuItem;
 
 import java.util.ArrayList;
 
-import id.sch.smktelkom_mlg.project2.xirpl30717233235.expinder.Adapter.infoAdapter;
-
 /**
  * Created by Shelin on 28/03/2017.
  */
@@ -38,8 +36,8 @@ public class InfoList extends AppCompatActivity implements infoAdapter.IInfoAdap
     protected void onCreate(Bundle savedInstanceState) {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_innfo_list);
-        setTitle("Angkot List");
+        setContentView(R.layout.activity_info_list);
+        setTitle("Information List");
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);

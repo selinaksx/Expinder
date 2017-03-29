@@ -21,7 +21,7 @@ public class InfoDetails extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_info_detaills);
+        setContentView(R.layout.activity_info_details);
         TextView angkotDetail = (TextView) findViewById(R.id.place_detail);
         TextView angkotLocation = (TextView) findViewById(R.id.place_location);
         ImageView angkotGambar = (ImageView) findViewById(R.id.imageFoto);

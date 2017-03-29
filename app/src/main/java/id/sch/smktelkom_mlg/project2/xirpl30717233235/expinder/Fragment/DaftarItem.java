@@ -28,7 +28,7 @@ public class DaftarItem extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        View v = inflater.inflate(R.layout.fragment_daftar_item2, container, false);
+        View v = inflater.inflate(R.layout.fragment_daftar_item, container, false);
         v.findViewById(R.id.fabAdd).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -101,6 +101,7 @@ public class DrawerActivity extends AppCompatActivity
         } else if (id == R.id.navInfo) {
             f = new InfoItem();
             title = "Informasi Item";
+
         }
 
         if (f != null) {
