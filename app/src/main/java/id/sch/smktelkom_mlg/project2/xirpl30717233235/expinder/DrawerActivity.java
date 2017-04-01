@@ -12,7 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import id.sch.smktelkom_mlg.project2.xirpl30717233235.expinder.Fragment.ArsipItem;
+import id.sch.smktelkom_mlg.project2.xirpl30717233235.expinder.Fragment.AboutApp;
 import id.sch.smktelkom_mlg.project2.xirpl30717233235.expinder.Fragment.DaftarItem;
 import id.sch.smktelkom_mlg.project2.xirpl30717233235.expinder.Fragment.FavoritItem;
 import id.sch.smktelkom_mlg.project2.xirpl30717233235.expinder.Fragment.HalamanUtama;
@@ -69,9 +69,6 @@ public class DrawerActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -85,23 +82,23 @@ public class DrawerActivity extends AppCompatActivity
         String title = null;
         if (id == R.id.navHalamanUtama) {
             f = new HalamanUtama();
-            title = "Halaman Utama";
+            title = "Home";
         } else if (id == R.id.navDaftar) {
             f = new DaftarItem();
-            title = "Daftar Item";
-        } else if (id == R.id.navFavorit) {
-            f = new FavoritItem();
-            title = "Favorit";
-        } else if (id == R.id.navArsip) {
-            f = new ArsipItem();
-            title = "Arsip";
+            title = "Items List";
         } else if (id == R.id.navKadaluarsa) {
             f = new KadaluarsaItem();
-            title = "Kadaluarsa";
+            title = "Expired Item";
+        } else if (id == R.id.navFavorit) {
+            f = new FavoritItem();
+            title = "Favorite";
         } else if (id == R.id.navInfo) {
             f = new InfoItem();
             title = "Informasi Item";
 
+        } else if (id == R.id.navAbout) {
+            f = new AboutApp();
+            title = "About App";
         }
 
         if (f != null) {
@@ -116,6 +113,8 @@ public class DrawerActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
+        }
+
+
 }
 

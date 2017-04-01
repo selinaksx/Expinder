@@ -9,14 +9,13 @@ import android.view.ViewGroup;
 
 import id.sch.smktelkom_mlg.project2.xirpl30717233235.expinder.R;
 
-
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ArsipItem extends Fragment {
+public class AboutApp extends Fragment {
 
 
-    public ArsipItem() {
+    public AboutApp() {
         // Required empty public constructor
     }
 
@@ -24,9 +23,9 @@ public class ArsipItem extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_arsip_item, container, false);
-    }
 
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_about_app, container, false);
+    }
 
 }
